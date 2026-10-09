@@ -1,7 +1,7 @@
 // import {getPortfolioData}
-import { getPortfolioData } from '../app/actions/portfolio.js';
-import PortfolioClient from '../app/PortfolioClient';
-
+import { getPortfolioData } from "../app/actions/portfolio.js";
+import PortfolioClient from "../app/PortfolioClient";
+export const dynamic = "force-dynamic";
 export default async function MainPortfolioPage() {
   // Fetch all data from MongoDB via your updated server action
   const initialData = await getPortfolioData();
